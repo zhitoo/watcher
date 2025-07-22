@@ -11,7 +11,7 @@ const projectRoot = process.cwd();
 const inputCommand = process.argv[2];
 if (!inputCommand) {
   console.error(
-    '❌ Error: No command provided.\nUsage: octane-watch "your-command-here"'
+    '❌ Error: No command provided.\nUsage: watcher "your-command-here"'
   );
   process.exit(1);
 }
