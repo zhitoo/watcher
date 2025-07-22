@@ -1,0 +1,13 @@
+{
+  "name": "watcher",
+  "version": "1.0.0",
+  "description": "File watcher for Laravel Octane (reload on file changes)",
+  "bin": {
+    "watcher": "./bin/watcher.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "author": "Hossein Shafiei",
+  "license": "MIT"
+}
