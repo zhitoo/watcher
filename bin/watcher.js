@@ -17,7 +17,7 @@ if (!inputCommand) {
 }
 
 function readIgnorePatterns() {
-  const ignoreFilePath = path.join(projectRoot, ".octaneignore");
+  const ignoreFilePath = path.join(projectRoot, ".watcherignore");
   if (!fs.existsSync(ignoreFilePath)) return [];
 
   const lines = fs
@@ -37,7 +37,7 @@ function readIgnorePatterns() {
 const ignoredPatterns = readIgnorePatterns();
 
 console.log(
-  "📁 Ignored paths from .octaneignore:",
+  "📁 Ignored paths from .watcherignore:",
   ignoredPatterns.map((r) => r.toString())
 );
 console.log(
